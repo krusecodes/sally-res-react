@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Here you can find Sally contact information">
+    <title>Sally contact</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="application-root"></div>
+
+    <script
+    src="https://unpkg.com/react@16/umd/react.development.js">
+  </script>
+  <script
+    src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+  </script>
+  <script
+    src="https://unpkg.com/babel-standalone@6/babel.min.js">
+  </script>
+
+    <script type="text/babel">
+        function App(props) {
+       return (
+         <div>
+          <header>
+            <h1>{props.title}</h1>
+      </header>
+        <section>
+        <h2>Sally's Contact Information</h2>
+        <address>
+        <ul>
+          <li>Name: Sally</li>
+          <li>Email Address: <a href="mailto:sally@sallystudent.com">sally@sallystudent.com</a></li>
+          <li>Phonen Number: <a href="tel:123-456-7890">123-456-7890</a></li>
+          <li> <img src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" alt="Image of Sally" /> </li>
+        </ul>
+        </address>
+        </section>
+        <section>
+        <h2>Sally's Education</h2>
+          <ul>
+          <li>University: Biola</li>
+          <li>Degree: Marketing</li>
+          <li>GPA: 4.0</li>
+          </ul>
+        </section>
+        <section>
+         <h2>Sally's Employment History</h2>
+          <h3>Director of Digital Marketing at Apple</h3>
+          <p>Responsible for shaping the marketing and communications strategy for Apple, and implementing programs with support from other members of staff, and with further support from marketing interns.</p> 
+          <ul>
+          <li>Dates of Employment: June, 2001 to March, 2015 </li>
+          </ul>
+        <h3>Director of Digital Marketing at Google</h3>
+          <p>Responsible for shaping the marketing and communications strategy for Google, and implementing programs with support from other members of staff, and with further support from marketing interns.</p> 
+          <ul>
+          <li>Dates of Employment: March, 1995 to June, 2001 </li>
+          </ul>
+        </section>
+        </div>
+      );
+    };
+
+ReactDOM.render(
+  <App 
+  title='Sally Student Resume'
+  phone={12345678}
+  />,
+  document.querySelector('#application-root')
+);
+    </script>
+
+</body>
+</html>
